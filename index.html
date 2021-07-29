@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Style.css">
+
+  </head>
+  <body >
+  <div class="setupBar">
+    <div class="row">
+      <div class="column_left">
+        <p>Background color:</p>
+      </div>
+      <div class="column_right">
+        <input type="color" id="BkgColor" class="colorPiker" value="#321517" onchange="getBkgColor()"></div>
+    </div>
+    <div class="row">
+      <div class="column_left">
+        <p>String color:</p>
+      </div>
+      <div class="column_right">
+        <input type="color" id="StrColor" class="colorPiker" value="#321517" onchange="getStrColor()"></div>
+    </div>
+    <div class="row">
+      <div class="column_left">
+        <input type="number" id="strNum" onkeyup="getStrNum()" class="numInput" placeholder="Num of strings" step="1" min="1" max="40"></div>
+      <button style="border-radius: 10px" onclick="setDefStrNum()"> Set def </button>
+    </div>
+    <div class="row">
+      <div class="column_left">
+        <input type="number" id="strLength" onkeyup="getStrMaxLength()" class="numInput" placeholder="Max str length" step="1" min="1" max="40"></div>
+      <button style="border-radius: 10px" onclick="setDefLength()"> Set def </button>
+    </div>
+
+
+    <div class="row">
+      <button class="applyButton" onclick="reload()">Approve changes</button>
+    </div>
+
+
+  </div>
+
+
+  </body>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+  <script src="sketch.js"></script>
+
+</html>
